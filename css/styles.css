@@ -45,7 +45,7 @@ body {
 }
 .logo-link {
     color:var(--iris);
-    font-family: Raleway; sans-serif;
+    font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.2;
@@ -117,7 +117,7 @@ body {
 .address-menu-item:focus {
     color: var(--ocean);
 }
-.container {
+.header-container {
     width: 1150px;
     padding-left: 15px;
     padding-right: 15px;
@@ -166,15 +166,15 @@ body {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.features {
+.features-list {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
 }
-.features .item {
+.feature-list .item {
     flex-basis: calc((100% - 90px) / 4);
 }
-.features .title {
+.features-list {
     margin-bottom: 10px;
     color: var(--navyblue);
     font-weight: 500;
@@ -194,7 +194,8 @@ body {
 }
 .section-bg-team {
     background-color: var(--cloud);
-    height: 732px;
+    height: 2232px;
+    margin-top: 96px;
 }
 .section-title {
     text-align: center;
@@ -355,10 +356,12 @@ body {
 }
 .customers-list {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    width: 100%;
     align-items: center;
     justify-content: center;
-    padding: 0px 156px;
+    /* padding: 0px 156px; */
     margin-bottom: 120px;
     fill: currentColor;
 }
@@ -594,6 +597,8 @@ label {
     border: none;
     border-radius: 4px;
     background: var(--iris);
+    margin-top: 16px;
+    margin-left: 50px;
     padding: 8px 24px;
     display: flex;
     justify-content: center;
@@ -611,6 +616,73 @@ label {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-subscription-form {
-    display: flex;
-    gap: 24px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* gap: 24px; */
 }
+/* Mobile view */
+/* Media Queries */
+
+@media only screen and (min-width: 428px) and (max-width: 767px){
+    .header-container {
+        width: 428px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 428px) and (max-width: 767px), only screen and (max-width: 427px) {
+    .menu-item .menu-item-list,
+    .address-menu .address-menu-item {
+        display: none;
+        }
+     .hero .header-container {
+        display: block;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        height: 428px;
+        max-width: 320px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        margin: 0 auto; 
+        }
+     .feature-section, .features-list,
+     .features-list-item {
+        width: 100%;
+        min-height: 120px;
+        gap: 72px 16px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        }
+    .feature-list-item .h2 {
+        font-family: Roboto, sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+        }
+    .team-list {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 72px;
+        }
+    .customers-list,
+    .customers-item, .list {
+        flex-basis: calc((100% - 12px) / 2)
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 428px;
+        gap: 72px 16px;
+        }
+    }

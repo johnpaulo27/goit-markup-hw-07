@@ -3,6 +3,7 @@
     <head>
         <title>goit-markup-hw-07</title>
         <meta name="description" content="A great website"  />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8"   />
         <link rel="stylesheet" type="text/css" href="./css/styles.css" />
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -12,66 +13,66 @@
     <!-- header Section -->
     <header class="page-header">
         <div class="container">
-        <nav class="navigation">
-            <a class="logo-link" href="index.html">WEB<span class="logo-black">STUDIO</span></a>
-            <ul class="menu-item">
-                <li><a class="menu-item-list current" href="./index.html">Studio</a></li>
-                <li><a class="menu-item-list" href="./portfolio.html">Portfolio</a></li>
-                <li><a class="menu-item-list" href="#">Contacts</a></li>
-            </ul>
-            <ul class="address-menu">
-                <li><a class="address-menu-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="address-menu-item" href="tel:+11(000)111-111-11">+11(000)111-111-11</a></li>
-            </ul>
-        </nav>
+            <nav class="navigation">
+                <a class="logo-link" href="index.html">WEB<span class="logo-black">STUDIO</span></a>
+                <ul class="menu-item">
+                    <li><a class="menu-item-list current" href="./index.html">Studio</a></li>
+                    <li><a class="menu-item-list" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="menu-item-list" href="#">Contacts</a></li>
+                </ul>
+                <ul class="address-menu">
+                    <li><a class="address-menu-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="address-menu-item" href="tel:+11(000)111-111-11">+11(000)111-111-11</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <!-- main section -->
-    <main>
+    <div>
         <section class="hero">
-            <div class="container">
+            <div class="header-container">
                 <h1 class="hero-title">Effective Solutions<br>for Your Business</h1>
                 <button type="button" class="button-primary" data-modal-open>Order Service</button>
             </div>
         </section>
     <!-- features section 1 -->
-    <section class="section">
-        <div class="container">
-        <ul class="features">
-            <li class="item">
-                <div class="icon">
+    <section class="feature-section">
+        <div class="feature-container">
+        <ul class="features-list">
+            <li class="feature-list-item">
+                <!-- <div class="icon">
                     <svg class="icon-svg" width="64" height="64">
                       <use href="./img.jpg/icons.svg#icon-antenna-1"></use>
                     </svg>
-                </div>
-                    <h3 class="item">Strategy</h3>
+                    </div> -->
+                    <h2 class="item">Strategy</h2>
                     <p>Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
             </li>
-            <li class="item">
-                <div class="icon">
+            <li class="feature-list-item">
+                <!-- <div class="icon">
                     <svg class="icon-svg" width="64" height="64">
                       <use href="./img.jpg/icons.svg#icon-clock-1"></use>
                     </svg>
-                </div>
-                    <h3 class="item">Punctuality</h3>
+                    </div> -->
+                    <h2 class="feature-list-item">Punctuality</h2>
                     <p class="description">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
             </li>
-            <li class="item">
-                <div class="icon">
+            <li class="feature-list-item">
+                <!-- <div class="icon">
                     <svg class="icon-svg" width="64" height="64">
                       <use href="./img.jpg/icons.svg#icon-diagram-1"></use>
                     </svg>
-                </div>
-                <h3 class="item">Diligence</h3>
+                    </div> -->
+                <h2 class="feature-list-item">Diligence</h2>
                 <p class="description">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
             </li>
-            <li class="item">
-                <div class="icon">
+            <li class="feature-list-item">
+                <!-- <div class="icon">
                     <svg class="icon-svg" width="64" height="64">
                       <use href="./img.jpg/icons.svg#icon-astronaut-1"></use>
                     </svg>
-                </div>
-                <h3 class="item">Technonologies</h3>
+                    </div> -->
+                <h2 class="feature-list-item">Technonologies</h2>
                 <p class="description">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
             </li>
         </ul>
@@ -79,8 +80,8 @@
     </section>
 
     <!-- transactions section 2 -->
-    <section class="section no-top-padding">
-        <div class="container">
+    <!-- <section class="section no-top-padding">
+        <div class="wrwd-container">
             <h2 class="section-title">What Are We Doing</h2>
             <ul class="transaction-list">
                 <li class="item"><img src="img.jpg/computer.jpg" alt="computer" width="360" height="300"/></li>
@@ -88,10 +89,10 @@
                 <li class="item"><img src="./img.jpg/cellphone-and-laptop.jpg" alt="cellphone-and-laptop" width="360" height="300" /></li>
             </ul>
         </div>
-    </section>
+        </section> -->
     <!--our team section-->
     <section class="section-bg-team">
-        <div class="container">
+        <div class="team-section-container">
             <h2 class="section-title">Our Team</h2>
              <div class="team-list">
                 <ul class="team-list">
@@ -193,11 +194,9 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </section>
+        </section>
     <!-- customer section-->
-        <section class="customer-section">
-            <div class="container">
+            <div class="customer-section-container">
               <h2 class="section-title customers-title">Customers</h2>
               <ul class="customers-list list">
                 <li class="customers-item">
@@ -238,7 +237,7 @@
                 </li>
               </ul>
             </div>
-          </section>
+    </section>
     </main>
     <!-- footer -->
     <footer class="page-footer">
