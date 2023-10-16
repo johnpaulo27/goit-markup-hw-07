@@ -24,11 +24,15 @@
                     <li><a class="address-menu-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="address-menu-item" href="tel:+11(000)111-111-11">+11(000)111-111-11</a></li>
                 </ul>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="mobile-menu-icon" width="32" height="22">
+                        <use href="./img.jpg/icons.svg#hamburger"></use>
+                    </svg>
+                </button>
             </nav>
         </div>
     </header>
     <!-- main section -->
-    <div>
         <section class="hero">
             <div class="header-container">
                 <h1 class="hero-title">Effective Solutions<br>for Your Business</h1>
@@ -36,47 +40,49 @@
             </div>
         </section>
     <!-- features section 1 -->
-    <section class="feature-section">
+    <section class="features-section">
+    <div class="feature-section">
         <div class="feature-container">
         <ul class="features-list">
             <li class="feature-list-item">
-                <!-- <div class="icon">
+                <div class="icon">
                     <svg class="icon-svg" width="64" height="64">
                       <use href="./img.jpg/icons.svg#icon-antenna-1"></use>
                     </svg>
-                    </div> -->
+                    </div>
                     <h2 class="item">Strategy</h2>
                     <p>Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
             </li>
             <li class="feature-list-item">
-                <!-- <div class="icon">
+                <div class="icon">
                     <svg class="icon-svg" width="64" height="64">
                       <use href="./img.jpg/icons.svg#icon-clock-1"></use>
                     </svg>
-                    </div> -->
+                    </div>
                     <h2 class="feature-list-item">Punctuality</h2>
                     <p class="description">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
             </li>
             <li class="feature-list-item">
-                <!-- <div class="icon">
+                <div class="icon">
                     <svg class="icon-svg" width="64" height="64">
                       <use href="./img.jpg/icons.svg#icon-diagram-1"></use>
                     </svg>
-                    </div> -->
+                    </div>
                 <h2 class="feature-list-item">Diligence</h2>
                 <p class="description">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
             </li>
             <li class="feature-list-item">
-                <!-- <div class="icon">
+                <div class="icon">
                     <svg class="icon-svg" width="64" height="64">
                       <use href="./img.jpg/icons.svg#icon-astronaut-1"></use>
                     </svg>
-                    </div> -->
+                    </div>
                 <h2 class="feature-list-item">Technonologies</h2>
                 <p class="description">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
             </li>
         </ul>
         </div>
+    </div>
     </section>
 
     <!-- transactions section 2 -->
@@ -101,19 +107,27 @@
                         <h3 class="name">Mark Guerrero</h3>
                         <p class="position">Designer</p>
                         <ul class="team-links">
-                            <li class="team-links-item"><a href="#" class="team-social-link"><svg class="team-link-svg"  width="16" height="16">
+                            <li class="team-links-item">
+                                <a href="#" class="team-social-link">
+                                <svg class="team-link-svg"  width="16" height="16">
                                 <use href="./img.jpg/icons.svg#icon-instagram"></use></svg>
                                 </a>
                             </li>
-                            <li class="team-links-item"><a href="#" class="team-social-link"><svg class="team-link-svg" width="16" height="16">
+                            <li class="team-links-item">
+                                <a href="#" class="team-social-link">
+                                <svg class="team-link-svg" width="16" height="16">
                                 <use href="./img.jpg/icons.svg#icon-twitter"></use></svg>
                                 </a>
                             </li>
-                            <li class="team-links-item"><a href="#" class="team-social-link"><svg class="team-link-svg" width="16" height="16">
+                            <li class="team-links-item">
+                                <a href="#" class="team-social-link">
+                                <svg class="team-link-svg" width="16" height="16">
                                 <use href="./img.jpg/icons.svg#icon-facebook"></use></svg>
                                 </a>
                             </li>
-                            <li class="team-links-item"><a href="#" class="team-social-link"><svg class="team-link-svg" width="16" height="16">
+                            <li class="team-links-item">
+                                <a href="#" class="team-social-link">
+                                <svg class="team-link-svg" width="16" height="16">
                                 <use href="./img.jpg/icons.svg#icon-linkedin"></use></svg>
                                 </a>
                             </li>
@@ -194,8 +208,10 @@
                     </li>
                 </ul>
             </div>
+        </div>
         </section>
     <!-- customer section-->
+    <section class="customer-section">
             <div class="customer-section-container">
               <h2 class="section-title customers-title">Customers</h2>
               <ul class="customers-list list">
@@ -244,7 +260,7 @@
         <section class="footer-section">
         <div class="footer-container">
             <div class="footer-logo-wrapper">
-                <ul class="footer-item list">
+                <ul class="footer-item-list">
                     <li class="footer-item">
                     <a class="logo-link" href="index.html">WEB<span class="logo-white">STUDIO</span></a><br>
                     <p class="footer-description">Increase the flow of customers and<br>sales for your business with digital<br>marketing & growth solutions.</p>
@@ -293,8 +309,8 @@
                     </label>
                     <button class="footer-subscription-button" type="submit">
                         <span>Subscribe</span>
-                        <svg class="footer-subscription-icon" width=24 height="24" >
-                            <use href="./img.jpg/icons.svg#footer-subscription-icon"></use>
+                        <use class="footer-subscription-icon" width=24 height="24" >
+                            <use href="./img.jpg/icons.svg#footer-subscription-icon"/></use>
                         </svg>
                     </button>
                 </form>
@@ -350,6 +366,61 @@
                     </form>
                 </div>
             </div>
+
+            <!-- Mobile -->
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button type="button" class="menu-toggle js-close-menu mobile-close-btn">&times;</button>
+                <ul class="mobile-menu-list list">
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link link" href="index.html">Studio</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link link" href="#">Contacts</a>
+                    </li>
+                </ul>
+                <ul class="mobile-contacts-list">
+                    <li class="mobile-contacts-item">
+                        <a class="mobile-contacts-link link" href="tel:+11000111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="mobile-contacts-item">
+                        <a class="mobile-contacts-link link" href="mailto: info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-social-media-list">
+                    <li class="mobile-social-media-item">
+                        <a class="mobile-social-media-link link">
+                            <svg class="mobile-social-media-icon-svg" width="24" height="24">
+                                <use href="./img.jpg/icons.svg#icon-instagram" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social-media-item">
+                        <a class="mobile-social-media-link link">
+                            <svg class="mobile-social-media-icon-svg" width="24" height="24">
+                                <use href="./img.jpg/icons.svg#icon-twitter" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social-media-item">
+                        <a class="mobile-social-media-link link">
+                            <svg class="mobile-social-media-icon-svg" width="24" height="24">
+                                <use href="./img.jpg/icons.svg#icon-facebook" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social-media-item">
+                        <a class="mobile-social-media-link link">
+                            <svg class="mobile-social-media-icon-svg" width="24" height="24">
+                                <use href="./img.jpg/icons.svg#icon-linkedin" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        <script src="./js/mobile.menu.js"></script>
         <script src="./js/modal.js"></script>
     </body>
 </html>
