@@ -751,11 +751,11 @@ label {
 .mobile-social-media-link .svg {
     fill: var(--white);
 }
-.mobile-social-media-link .mobile-social-media-icon-svg,
-
+.mobile-social-media-link .mobile-social-media-icon-svg {
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
 .mobile-social-media-link:hover,
 .mobile-social-media-link:focus {
@@ -841,4 +841,4 @@ label {
         justify-content: center;
         align-items: center;
         }
-    }
+}
